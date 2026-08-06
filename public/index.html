@@ -1,23 +1,25 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8faff">
-<meta name="description" content="DIZLE crea productos digitales, automatizaciones y soluciones a medida.">
-<title>DIZLE — Productos y soluciones digitales</title>
-<link rel="stylesheet" href="base.css?v=20260806-1050">
-<link rel="stylesheet" href="components.css?v=20260806-1050">
-<link rel="stylesheet" href="taskflow.css?v=20260806-1050">
-<style>
-.brand-image{display:block;width:166px;height:auto}.hero-symbol-image{position:relative;z-index:5;display:block;width:min(520px,88%);height:auto;filter:drop-shadow(0 22px 28px rgba(56,84,255,.2)) drop-shadow(0 0 36px rgba(138,45,255,.18));animation:float 6s ease-in-out infinite}.footer .brand-image{width:145px}@media(max-width:720px){.brand-image{width:136px}.hero-symbol-image{width:min(390px,88%)}}
-</style>
-<script defer src="script.js?v=20260806-1050"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8faff">
+  <meta name="description" content="DIZLE desarrolla productos digitales, automatizaciones y soluciones a medida para equipos y negocios.">
+  <meta property="og:title" content="DIZLE — Productos y soluciones digitales">
+  <meta property="og:description" content="Productos digitales reales para organizar, automatizar y potenciar equipos.">
+  <title>DIZLE — Productos y soluciones digitales</title>
+  <link rel="icon" href="assets/dizle-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="base.css?v=20260806-1105">
+  <link rel="stylesheet" href="components.css?v=20260806-1105">
+  <link rel="stylesheet" href="taskflow.css?v=20260806-1105">
+  <script defer src="script.js?v=20260806-1105"></script>
 </head>
 <body>
 <header class="header" id="header">
   <div class="wrap nav">
-    <a class="brand" href="#inicio" aria-label="DIZLE, inicio"><img class="brand-image" src="dizle-logo.svg?v=20260806-1050" alt="DIZLE"></a>
+    <a class="brand" href="#inicio" aria-label="DIZLE, inicio">
+      <img class="brand-image" src="assets/dizle-logo.svg" alt="DIZLE">
+    </a>
     <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav id="nav"><a class="active" href="#inicio">Inicio</a><a href="#nosotros">Sobre DIZLE</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
     <div class="nav-side"><a href="https://instagram.com/dizlec" target="_blank" rel="noreferrer">◎ @dizlec</a><a class="btn btn-outline small" href="#contacto">Solicitar proyecto →</a></div>
@@ -29,66 +31,55 @@
   <div class="wrap hero-grid">
     <div class="hero-copy reveal">
       <h1>Construimos soluciones que <span>impulsan tu negocio.</span></h1>
-      <p class="lead">DIZLE es la empresa detrás de productos y soluciones digitales diseñadas para optimizar procesos, automatizar tareas y potenciar equipos.</p>
+      <p class="lead">DIZLE desarrolla productos y soluciones digitales diseñadas para optimizar procesos, automatizar tareas y potenciar equipos.</p>
       <div class="actions"><a class="btn btn-primary" href="#proyectos">Conocer nuestros proyectos →</a><a class="btn btn-outline" href="#contacto">Solicitar proyecto →</a></div>
       <div class="proof"><span>Software propio</span><i></i><span>Desarrollo a medida</span><i></i><span>Automatizaciones</span></div>
     </div>
     <div class="hero-art reveal" aria-hidden="true">
-      <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="dots"></div><div class="halo"></div><img class="hero-symbol-image" src="dizle-symbol.svg?v=20260806-1050" alt=""><div class="floor"></div>
+      <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="dots"></div><div class="halo"></div>
+      <img class="hero-symbol-image" src="assets/dizle-symbol.svg" alt="">
+      <div class="floor"></div>
     </div>
   </div>
 </section>
+
 <section class="projects" id="proyectos">
   <div class="wrap project-shell reveal">
-    <div class="heading"><p class="eyebrow">Nuestros proyectos</p><h2>Soluciones creadas para hacer más simple lo complejo.</h2><p>Pasá el mouse o seleccioná un proyecto para ver una vista previa.</p></div>
-    <div class="tabs" role="tablist">
-      <button class="tab active" data-project="taskflow"><span class="task-logo"><b>T</b><i></i></span><span><strong>TaskFlow</strong><small>Centro operativo</small></span></button>
-      <button class="tab" data-project="gestor"><span class="gestor-logo"><i></i><i></i><i></i><i></i><b>✓</b></span><span><strong>Gestor de Tareas</strong><small>Gestión colaborativa</small></span></button>
+    <div class="heading"><p class="eyebrow">Nuestros proyectos</p><h2>Productos reales para ordenar y acelerar el trabajo.</h2><p>Seleccioná un proyecto para conocerlo y ver su interfaz real.</p></div>
+    <div class="tabs" role="tablist" aria-label="Proyectos de DIZLE">
+      <button class="tab active" data-project="taskflow" role="tab" aria-selected="true">
+        <img class="project-icon" src="assets/taskflow-icon.svg" alt=""><span><strong>TaskFlow</strong><small>Centro operativo</small></span>
+      </button>
+      <button class="tab" data-project="gestor" role="tab" aria-selected="false">
+        <img class="project-icon" src="assets/gestor-icon.svg" alt=""><span><strong>Gestor de Tareas</strong><small>Gestión personal</small></span>
+      </button>
     </div>
+
     <div class="stage">
       <article class="project-copy">
-        <p class="project-kicker" id="project-kicker">Centro operativo</p><h3 id="project-title">TaskFlow</h3>
-        <p id="project-description">Una plataforma integral para organizar tareas, proyectos y flujos de trabajo con claridad, seguimiento y automatizaciones.</p>
-        <ul id="project-features"><li>Vistas adaptables para cada equipo</li><li>Automatizaciones y recordatorios</li><li>Reportes para decidir más rápido</li></ul>
+        <p class="project-kicker" id="project-kicker">Centro operativo</p>
+        <h3 id="project-title">TaskFlow</h3>
+        <p id="project-description">Una plataforma operativa para centralizar tareas, prioridades, alianzas, respuestas y automatizaciones en un único espacio de trabajo.</p>
+        <ul id="project-features"><li>Filtros, prioridades y estados</li><li>Proyectos, respuestas y automatizaciones</li><li>Adjuntos, checklist y notas</li></ul>
         <a id="project-link" href="#contacto">Conocer más ↗</a>
       </article>
 
-      <div class="preview taskflow-preview" data-preview="taskflow" aria-label="Vista previa de TaskFlow">
-        <aside class="tf-sidebar">
-          <div class="tf-wordmark"><span class="tf-mark">T</span><b>TaskFlow</b></div>
-          <nav><span>⌂ <em>Inicio</em></span><span>✓ <em>Tareas</em></span><span>□ <em>Proyectos</em></span><span>▦ <em>Calendario</em></span><span>◔ <em>Reportes</em></span><span>♢ <em>Automatizaciones</em></span></nav>
-          <div class="tf-help"><strong>Centro de ayuda</strong><small>Estamos para ayudarte.</small></div>
-          <div class="tf-user"><i>MR</i><span><b>Usuario Demo</b><small>demo@taskflow.app</small></span><b>⌄</b></div>
-        </aside>
-        <div class="tf-app">
-          <div class="tf-top"><button>☰</button><div class="tf-search">⌕ <span>Buscar en TaskFlow...</span><kbd>⌘ K</kbd></div><button>?</button><button>♧</button><i class="tf-avatar">UD</i></div>
-          <div class="tf-content">
-            <div class="tf-title"><div><h4>Resumen general</h4><p>Visión general de tus proyectos y tareas</p></div><div><button>↻</button><button>＋ Nueva tarea</button></div></div>
-            <section class="tf-projects-card">
-              <div class="tf-card-head"><div><b>Proyectos</b><small>Resumen de proyectos activos</small></div><button>▣ Ver proyectos</button></div>
-              <div class="tf-project-row"><i class="violet">A</i><span><b>Proyecto Aurora</b><small>11 miembros</small></span><span class="tf-progress"><em style="width:64%"></em></span><strong>64%</strong><small>30/09/2026</small><mark>En curso</mark></div>
-              <div class="tf-project-row"><i class="blue">B</i><span><b>Proyecto Brisa</b><small>7 miembros</small></span><span class="tf-progress"><em style="width:42%"></em></span><strong>42%</strong><small>15/10/2026</small><mark>En curso</mark></div>
-              <div class="tf-project-row"><i class="pink">C</i><span><b>Proyecto Centinela</b><small>5 miembros</small></span><span class="tf-progress"><em style="width:84%"></em></span><strong>84%</strong><small>22/08/2026</small><mark>En curso</mark></div>
-            </section>
-            <div class="tf-stat-grid"><article><span>▣</span><small>Total tareas</small><b>156</b></article><article><span>✓</span><small>Completadas</small><b>89</b></article><article><span>↻</span><small>En curso</small><b>42</b></article><article><span>◷</span><small>Pendientes</small><b>25</b></article></div>
-            <div class="tf-bottom-grid">
-              <section class="tf-chart-card"><div class="tf-card-head"><div><b>Tareas por estado</b><small>Distribución actual</small></div><button>Esta semana ⌄</button></div><div class="tf-bars"><div><span>Completadas</span><i style="height:72%"></i><b>89</b></div><div><span>En curso</span><i style="height:46%"></i><b>42</b></div><div><span>Pendientes</span><i style="height:30%"></i><b>25</b></div></div></section>
-              <section class="tf-tasks-card"><div class="tf-card-head"><div><b>Tareas próximas</b><small>Próximos vencimientos</small></div><button>Ver todas</button></div><p><i class="violet">A</i><span><b>Definir flujo de clientes</b><small>Proyecto Aurora</small></span><em>Hoy</em></p><p><i class="blue">B</i><span><b>Revisar automatizaciones</b><small>Proyecto Brisa</small></span><em>Mañana</em></p><p><i class="pink">C</i><span><b>Validar indicadores</b><small>Proyecto Centinela</small></span><em>Viernes</em></p></section>
-            </div>
-          </div>
-        </div>
-      </div>
+      <figure class="preview media-preview" data-preview="taskflow">
+        <div class="media-topbar"><span><i></i><i></i><i></i></span><b>Vista real de TaskFlow</b></div>
+        <div class="media-canvas taskflow-canvas"><img src="assets/taskflow-screen.svg" alt="Interfaz real de TaskFlow"></div>
+      </figure>
 
-      <div class="preview light hidden" data-preview="gestor" aria-label="Vista previa de Gestor de Tareas">
-        <aside><div class="mini-brand"><span class="mini-gestor"><i></i><i></i><i></i><i></i></span><b>Gestor</b></div><nav><span class="selected">Panel</span><span>Tareas</span><span>Proyectos</span><span>Equipos</span><span>Calendario</span><span>Reportes</span></nav><small>Equipo Demo</small></aside>
-        <div class="dashboard"><div class="dash-head"><div><small>BUENAS TARDES, EQUIPO</small><h4>Tu trabajo de hoy</h4></div><button>+ Crear tarea</button></div><div class="stats"><span><small>Tareas activas</small><b>36</b></span><span><small>En curso</small><b>12</b></span><span><small>Pendientes</small><b>9</b></span><span><small>Completadas</small><b>15</b></span></div><div class="dash-panels"><div class="table"><div class="panel-head"><b>Próximas tareas</b><small>Ver todas</small></div><p><span>Revisar propuesta comercial</span><em>Hoy</em><mark>En curso</mark></p><p><span>Preparar reunión con cliente</span><em>Mañana</em><mark>Pendiente</mark></p><p><span>Actualizar documentación</span><em>Viernes</em><mark>En revisión</mark></p></div><div class="chart"><div class="panel-head"><b>Actividad del equipo</b><small>Semana</small></div><div class="donut"><b>36</b><small>tareas</small></div><ul><li>Completadas 42%</li><li>En curso 33%</li><li>Pendientes 25%</li></ul></div></div></div>
-      </div>
+      <figure class="preview media-preview hidden" data-preview="gestor">
+        <div class="media-topbar"><span><i></i><i></i><i></i></span><b>Vista de Gestor de Tareas</b></div>
+        <div class="media-canvas gestor-canvas"><img src="assets/gestor-screen.svg" alt="Interfaz de Gestor de Tareas"></div>
+      </figure>
     </div>
   </div>
 </section>
+
 <section class="about" id="nosotros"><div class="wrap about-grid reveal"><div><p class="eyebrow">Sobre DIZLE</p><h2>Tecnología que trabaja para <span>vos.</span></h2></div><p class="about-copy">En DIZLE desarrollamos productos propios y soluciones a medida que combinan diseño, tecnología y experiencia para resolver problemas reales y generar impacto.</p><div class="values"><article><i>ϟ</i><div><h3>Soluciones modernas</h3><p>Tecnología actualizada para equipos que quieren avanzar.</p></div></article><article><i>◎</i><div><h3>Hechas para equipos</h3><p>Pensadas para mejorar la colaboración y la productividad.</p></div></article><article><i>◇</i><div><h3>Seguras y confiables</h3><p>Construimos con foco en estabilidad, privacidad y crecimiento.</p></div></article></div></div></section>
 <section class="contact" id="contacto"><div class="wrap contact-shell reveal"><div class="contact-intro"><span>✉</span><div><p class="eyebrow">Hablemos</p><h2>¿Tenés una idea o necesitás ayuda con un proyecto?</h2><p>Contanos qué necesitás y te ayudamos a llevarlo al siguiente nivel.</p></div></div><form id="contact-form"><label>Nombre<input name="name" required placeholder="Tu nombre"></label><label>Email<input type="email" name="email" required placeholder="tu@email.com"></label><label class="full">Proyecto<textarea name="message" required rows="4" placeholder="Contanos brevemente tu idea o necesidad"></textarea></label><button class="btn btn-primary full" type="submit">Preparar consulta →</button><small class="full">Se abrirá tu aplicación de correo con el mensaje listo para enviar.</small></form><div class="contact-links"><a href="mailto:dizle@gestordetareas.com.ar">✉ dizle@gestordetareas.com.ar</a><a href="https://instagram.com/dizlec" target="_blank" rel="noreferrer">◎ @dizlec</a></div></div></section>
 </main>
-<footer><div class="wrap footer"><a class="brand" href="#inicio" aria-label="DIZLE, inicio"><img class="brand-image" src="dizle-logo.svg?v=20260806-1050" alt="DIZLE"></a><p>© <span id="year"></span> DIZLE.com.ar — Todos los derechos reservados.</p><nav><a href="#inicio">Inicio</a><a href="#nosotros">Sobre DIZLE</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav></div></footer>
+<footer><div class="wrap footer"><a class="brand" href="#inicio" aria-label="DIZLE, inicio"><img class="brand-image footer-logo" src="assets/dizle-logo.svg" alt="DIZLE"></a><p>© <span id="year"></span> DIZLE.com.ar — Todos los derechos reservados.</p><nav><a href="#inicio">Inicio</a><a href="#nosotros">Sobre DIZLE</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav></div></footer>
 </body>
 </html>
