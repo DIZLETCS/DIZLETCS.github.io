@@ -1,6 +1,7 @@
 name = "dizletcs-github-io"
 compatibility_date = "2026-08-06"
 
+# Los archivos públicos se sirven únicamente desde esta carpeta.
 [assets]
 directory = "./public"
 not_found_handling = "single-page-application"
