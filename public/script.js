@@ -1,3 +1,8 @@
+const smoothLogoStyles=document.createElement('link');
+smoothLogoStyles.rel='stylesheet';
+smoothLogoStyles.href='logo-smooth.css?v=20260806-1203';
+document.head.appendChild(smoothLogoStyles);
+
 const projects={
   taskflow:{
     kicker:'Centro operativo',
