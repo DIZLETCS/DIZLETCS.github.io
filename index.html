@@ -1,18 +1,69 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8faff">
+  <meta name="description" content="DIZLE crea productos digitales, automatizaciones y soluciones a medida para equipos y negocios.">
+  <meta property="og:title" content="DIZLE — Soluciones digitales que impulsan tu negocio">
+  <meta property="og:description" content="La empresa matriz detrás de Gestor de Tareas, TaskFlow y nuevos productos digitales.">
+  <title>DIZLE — Productos y soluciones digitales</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
-</body>
-</html>
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="DIZLE, inicio"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><b></b></span><strong>DIZLE</strong></a>
+    <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="nav"><a class="active" href="#inicio">Inicio</a><a href="#nosotros">Sobre DIZLE</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+    <div class="nav-side"><a href="https://instagram.com/dizlec" target="_blank" rel="noreferrer">◎ @dizlec</a><a class="btn btn-outline small" href="#contacto">Solicitar proyecto →</a></div>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="stars"></div><div class="glow g1"></div><div class="glow g2"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Empresa matriz</p>
+      <h1>Construimos soluciones que <span>impulsan tu negocio.</span></h1>
+      <p class="lead">DIZLE es la empresa detrás de productos y soluciones digitales diseñadas para optimizar procesos, automatizar tareas y potenciar equipos.</p>
+      <div class="actions"><a class="btn btn-primary" href="#proyectos">Conocer nuestros proyectos →</a><a class="btn btn-outline" href="#contacto">Solicitar proyecto →</a></div>
+      <div class="proof"><span>Software propio</span><i></i><span>Desarrollo a medida</span><i></i><span>Automatizaciones</span></div>
+    </div>
+    <div class="hero-art reveal" aria-hidden="true">
+      <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="dots"></div><div class="halo"></div>
+      <div class="mega-symbol"><i></i><i></i><i></i><b></b></div><div class="floor"></div>
+    </div>
+  </div>
+</section>
+<section class="projects" id="proyectos">
+  <div class="wrap project-shell reveal">
+    <div class="heading"><p class="eyebrow">Nuestros proyectos</p><h2>Soluciones creadas para hacer más simple lo complejo.</h2><p>Pasá el mouse o seleccioná un proyecto para ver una vista previa.</p></div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-project="taskflow"><span class="task-logo"><i></i><b>✓</b></span><span><strong>TaskFlow</strong><small>Centro operativo</small></span></button>
+      <button class="tab" data-project="gestor"><span class="gestor-logo"><i></i><i></i><i></i><i></i><b>✓</b></span><span><strong>Gestor de Tareas</strong><small>Gestión colaborativa</small></span></button>
+    </div>
+    <div class="stage">
+      <article class="project-copy">
+        <p class="project-kicker" id="project-kicker">Centro operativo</p><h3 id="project-title">TaskFlow</h3>
+        <p id="project-description">Una plataforma integral para organizar tareas, proyectos y flujos de trabajo con claridad, seguimiento y automatizaciones.</p>
+        <ul id="project-features"><li>Vistas adaptables para cada equipo</li><li>Automatizaciones y recordatorios</li><li>Reportes para decidir más rápido</li></ul>
+        <a href="#contacto">Conocer más ↗</a>
+      </article>
+      <div class="preview dark-preview" data-preview="taskflow">
+        <aside><div class="mini-brand"><span class="mini-task">✓</span><b>TaskFlow</b></div><nav><span class="selected">Inicio</span><span>Tareas</span><span>Proyectos</span><span>Calendario</span><span>Reportes</span><span>Automatizaciones</span></nav><small>Espacio Demo</small></aside>
+        <div class="dashboard"><div class="dash-head"><div><small>RESUMEN GENERAL</small><h4>Panel de trabajo</h4></div><button>+ Nueva tarea</button></div><div class="stats"><span><small>Tareas totales</small><b>124</b><em>+12%</em></span><span><small>Completadas</small><b>48</b><em>+8%</em></span><span><small>En progreso</small><b>37</b><em>+5%</em></span><span><small>Pendientes</small><b>39</b><em class="down">-3%</em></span></div><div class="dash-panels"><div class="list"><div class="panel-head"><b>Proyectos activos</b><small>Esta semana</small></div><p><i class="red"></i>Proyecto Aurora <span>75%</span></p><p><i class="blue"></i>Proyecto Brisa <span>45%</span></p><p><i class="yellow"></i>Proyecto Centinela <span>90%</span></p><p><i class="purple"></i>Proyecto Delta <span>20%</span></p></div><div class="list activity"><div class="panel-head"><b>Actividad reciente</b><small>Últimas horas</small></div><p>Se completó “Diseño de flujo”</p><p>Nueva tarea asignada</p><p>Se actualizó un estado</p></div></div></div>
+      </div>
+      <div class="preview light-preview hidden" data-preview="gestor">
+        <aside><div class="mini-brand"><span class="mini-gestor"><i></i><i></i><i></i><i></i></span><b>Gestor</b></div><nav><span class="selected">Panel</span><span>Tareas</span><span>Proyectos</span><span>Equipos</span><span>Calendario</span><span>Reportes</span></nav><small>Equipo Demo</small></aside>
+        <div class="dashboard"><div class="dash-head"><div><small>BUENAS TARDES, EQUIPO</small><h4>Tu trabajo de hoy</h4></div><button>+ Crear tarea</button></div><div class="stats"><span><small>Tareas activas</small><b>36</b></span><span><small>En curso</small><b>12</b></span><span><small>Pendientes</small><b>9</b></span><span><small>Completadas</small><b>15</b></span></div><div class="dash-panels"><div class="table"><div class="panel-head"><b>Próximas tareas</b><small>Ver todas</small></div><p><span>Revisar propuesta comercial</span><em>Hoy</em><mark>En curso</mark></p><p><span>Preparar reunión con cliente</span><em>Mañana</em><mark>Pendiente</mark></p><p><span>Actualizar documentación</span><em>Viernes</em><mark>En revisión</mark></p></div><div class="chart"><div class="panel-head"><b>Actividad del equipo</b><small>Semana</small></div><div class="donut"><b>36</b><small>tareas</small></div><ul><li><i class="green"></i>Completadas 42%</li><li><i class="blue"></i>En curso 33%</li><li><i class="yellow"></i>Pendientes 25%</li></ul></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about" id="nosotros"><div class="wrap about-grid reveal"><div><p class="eyebrow">Sobre DIZLE</p><h2>Tecnología que trabaja para <span>vos.</span></h2></div><p class="about-copy">En DIZLE desarrollamos productos propios y soluciones a medida que combinan diseño, tecnología y experiencia para resolver problemas reales y generar impacto.</p><div class="values"><article><i>ϟ</i><div><h3>Soluciones modernas</h3><p>Tecnología actualizada para equipos que quieren avanzar.</p></div></article><article><i>◎</i><div><h3>Hechas para equipos</h3><p>Pensadas para mejorar la colaboración y la productividad.</p></div></article><article><i>◇</i><div><h3>Seguras y confiables</h3><p>Construimos con foco en estabilidad, privacidad y crecimiento.</p></div></article></div></div></section>
+<section class="contact" id="contacto"><div class="wrap contact-shell reveal"><div class="contact-intro"><span>✉</span><div><p class="eyebrow">Hablemos</p><h2>¿Tenés una idea o necesitás ayuda con un proyecto?</h2><p>Contanos qué necesitás y te ayudamos a llevarlo al siguiente nivel.</p></div></div><form id="contact-form"><label>Nombre<input name="name" required placeholder="Tu nombre"></label><label>Email<input type="email" name="email" required placeholder="tu@email.com"></label><label class="full">Proyecto<textarea name="message" required rows="4" placeholder="Contanos brevemente tu idea o necesidad"></textarea></label><button class="btn btn-primary full" type="submit">Preparar consulta →</button><small class="full">Se abrirá tu aplicación de correo con el mensaje listo para enviar.</small></form><div class="contact-links"><a href="mailto:dizle@gestordetareas.com.ar">✉ dizle@gestordetareas.com.ar</a><a href="https://instagram.com/dizlec" target="_blank" rel="noreferrer">◎ @dizlec</a></div></div></section>
+</main>
+<footer><div class="wrap footer"><a class="brand" href="#inicio"><span class="brand-symbol"><i></i><i></i><i></i><b></b></span><strong>DIZLE</strong></a><p>© <span id="year"></span> DIZLE.com.ar — Todos los derechos reservados.</p><nav><a href="#inicio">Inicio</a><a href="#nosotros">Sobre DIZLE</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav></div></footer>
+</body></html>
