@@ -2,15 +2,15 @@ const projects={
   taskflow:{
     kicker:'Centro operativo',
     title:'TaskFlow',
-    description:'Una plataforma operativa para centralizar tareas, prioridades, alianzas, respuestas y automatizaciones en un único espacio de trabajo.',
+    description:'Una plataforma operativa para centralizar tareas, prioridades, equipos, respuestas y automatizaciones en un único espacio de trabajo.',
     features:['Filtros, prioridades y estados','Proyectos, respuestas y automatizaciones','Adjuntos, checklist y notas'],
     href:'#contacto',external:false
   },
   gestor:{
-    kicker:'Gestión personal',
+    kicker:'Gestión colaborativa',
     title:'Gestor de Tareas',
-    description:'Una herramienta clara y directa para organizar el día, administrar proyectos y seguir el progreso desde escritorio o celular.',
-    features:['Vista diaria y listas de tareas','Proyectos, calendario y estadísticas','Diseño adaptable para escritorio y móvil'],
+    description:'Un centro operativo pensado para ordenar el trabajo diario, coordinar equipos y mantener cada proyecto bajo control.',
+    features:['Tareas, equipos y proyectos en un solo lugar','Comentarios, archivos y seguimiento','Automatizaciones para ahorrar tiempo'],
     href:'https://gestordetareas.com.ar',external:true
   }
 };
