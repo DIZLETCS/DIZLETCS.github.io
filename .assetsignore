@@ -1,6 +1,7 @@
-.git
-.git/**
-.wrangler
-.wrangler/**
+**/.git
+**/.git/**
+**/.wrangler
+**/.wrangler/**
 wrangler.toml
 README.md
+.assetsignore
