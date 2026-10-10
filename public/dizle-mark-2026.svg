@@ -1,25 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
-  <title id="title">DIZLE</title>
-  <desc id="desc">Tres flujos de trabajo convergen en una D, símbolo de centralización, conexión y movimiento.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 688" role="img" aria-label="DIZLE">
   <defs>
-    <linearGradient id="dizleGradient" x1="24" y1="34" x2="290" y2="206" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1FB7FF"/>
-      <stop offset="0.43" stop-color="#2563FF"/>
-      <stop offset="1" stop-color="#7C3AED"/>
+    <linearGradient id="g" x1="80" y1="70" x2="810" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0ea5ff"/>
+      <stop offset="0.5" stop-color="#315fff"/>
+      <stop offset="1" stop-color="#7c2cff"/>
     </linearGradient>
   </defs>
-  <g fill="url(#dizleGradient)">
-    <path d="M18 32h29l13 22H31z"/>
-    <path d="M18 84h31l13 22H31z"/>
-    <path d="M18 136h31l13 22H31z"/>
+  <g fill="url(#g)">
+    <path d="M257 56h296c176 0 282 111 282 288S729 632 553 632H153l73-112h327c108 0 168-63 168-176 0-112-61-176-168-176H322z"/>
+    <path d="M137 83h72l31 54-31 54h-72l-31-54z"/>
+    <path d="M80 213h96l30 53-30 53H80l-31-53z"/>
+    <path d="M176 184h358c70 0 119 28 147 82H223z"/>
+    <path d="M176 286h395c40 0 72 23 83 58 10 33 1 64-25 91H223z"/>
+    <path d="M224 410h287l45 102H310l-93 88z"/>
+    <path d="M223 519h330c36 0 68-6 96-18-27 67-80 105-159 105H152z"/>
   </g>
-  <path d="M58 45H188C249 45 286 74 286 120C286 166 249 195 188 195H76"
-        fill="none" stroke="url(#dizleGradient)" stroke-width="29"
-        stroke-linecap="square" stroke-linejoin="round"/>
-  <path d="M58 97H174C210 97 229 105 229 120C229 135 210 143 174 143H104"
-        fill="none" stroke="url(#dizleGradient)" stroke-width="23"
-        stroke-linecap="square" stroke-linejoin="round"/>
-  <path d="M58 149H109L77 180"
-        fill="none" stroke="url(#dizleGradient)" stroke-width="19"
-        stroke-linecap="square" stroke-linejoin="miter"/>
 </svg>
