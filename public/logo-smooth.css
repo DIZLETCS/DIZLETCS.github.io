@@ -1,49 +1,68 @@
-/* DIZLE 2026 — identidad vectorial aprobada para web */
+/* DIZLE 2026 — logo definitivo trazado desde el arte aprobado */
+.dizle-logo-switch{
+  position:relative;
+  display:inline-grid;
+  align-items:center;
+}
+.dizle-logo-lockup{
+  display:block;
+  width:192px;
+  height:auto;
+  object-fit:contain;
+  image-rendering:auto;
+  backface-visibility:hidden;
+  transform:translateZ(0);
+}
+.logo-light-header{display:none}
+.header.scrolled .logo-dark-header{display:none}
+.header.scrolled .logo-light-header{display:block}
+.footer-logo{width:178px}
+
+/* Isotipo exacto en el hero: mismo dibujo, sin reconstrucciones alternativas */
 .dizle-mark{
   display:block;
   flex:0 0 auto;
-  width:70px;
   height:auto;
   object-fit:contain;
-  filter:drop-shadow(0 8px 16px rgba(49,89,255,.20));
-  transform:translateZ(0);
+  image-rendering:auto;
   backface-visibility:hidden;
+  transform:translateZ(0);
 }
-.dizle-brand-logo{
-  display:inline-flex;
-  align-items:center;
-  gap:14px;
-}
-.dizle-brand-logo>strong{
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  font-size:1.48rem;
-  line-height:1;
-  letter-spacing:.14em;
-  font-weight:900;
-  color:#0B132B;
-}
-.header:not(.scrolled) .dizle-brand-logo>strong{color:#fff}
-.footer-brand{transform:scale(.9);transform-origin:left center}
-
-/* El mismo isotipo en el hero, conservando el movimiento y el glow */
 .dizle-mark-hero{
   width:min(560px,92%);
-  height:auto;
   position:relative;
   z-index:5;
   filter:
-    drop-shadow(0 0 12px rgba(31,183,255,.34))
-    drop-shadow(0 0 30px rgba(37,99,255,.42))
-    drop-shadow(0 0 58px rgba(124,58,237,.28));
+    drop-shadow(0 0 12px rgba(22,199,255,.30))
+    drop-shadow(0 0 30px rgba(37,99,255,.38))
+    drop-shadow(0 0 56px rgba(124,58,237,.27));
   animation:float 6s ease-in-out infinite;
   will-change:transform;
-}
-.hero-art .dizle-mark-hero{
   transform-origin:center;
 }
 
+/* Instagram: usar @ real, sin el icono circular anterior */
+.instagram-link{
+  display:inline-flex;
+  align-items:center;
+  gap:3px;
+  white-space:nowrap;
+}
+.instagram-at{
+  display:inline-block;
+  font-size:1.06em;
+  line-height:1;
+  font-weight:900;
+  transform:translateY(-.02em);
+}
+.contact-details a i{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-weight:900;
+  font-size:1rem;
+}
+
 @media(max-width:720px){
-  .dizle-mark{width:58px}
-  .dizle-brand-logo>strong{font-size:1.2rem;letter-spacing:.12em}
+  .dizle-logo-lockup{width:166px}
+  .footer-logo{width:158px}
   .dizle-mark-hero{width:min(390px,88%)}
 }
