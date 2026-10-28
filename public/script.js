@@ -3,7 +3,7 @@ const menu=document.getElementById('menu');
 const nav=document.getElementById('nav');
 
 addEventListener('scroll',()=>{
-  header?.classList.toggle('scrolled',scrollY>18);
+  header?.classList.toggle('scrolled',scrollY>16);
 },{passive:true});
 
 menu?.addEventListener('click',()=>{
@@ -14,22 +14,20 @@ menu?.addEventListener('click',()=>{
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
 const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting) entry.target.classList.add('show');
-  });
-},{threshold:.09});
+  entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show')});
+},{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
 const sections=[...document.querySelectorAll('main section[id]')];
-const navLinks=[...document.querySelectorAll('#nav a[href^="#"]')];
-function setActive(){
-  const y=scrollY+150;
+const links=[...document.querySelectorAll('#nav a[href^="#"]')];
+function syncNav(){
+  const y=scrollY+140;
   let current='inicio';
-  sections.forEach(section=>{if(section.offsetTop<=y) current=section.id});
-  navLinks.forEach(link=>link.classList.toggle('active',link.getAttribute('href')===`#${current}`));
+  sections.forEach(section=>{if(section.offsetTop<=y)current=section.id});
+  links.forEach(link=>link.classList.toggle('active',link.getAttribute('href')===`#${current}`));
 }
-addEventListener('scroll',setActive,{passive:true});
-setActive();
+addEventListener('scroll',syncNav,{passive:true});
+syncNav();
 
 const year=document.getElementById('year');
-if(year) year.textContent=new Date().getFullYear();
+if(year)year.textContent=new Date().getFullYear();
