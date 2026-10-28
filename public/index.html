@@ -3,245 +3,300 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#07122d">
-  <meta name="description" content="DIZLE desarrolla software para centralizar gestión, procesos, administración, comunicación y documentos en un mismo ecosistema de trabajo.">
-  <meta property="og:title" content="DIZLE — Software para ordenar el trabajo">
-  <meta property="og:description" content="Gestión, procesos, comunicación, documentos y automatizaciones en un mismo ecosistema.">
-  <title>DIZLE — Software para ordenar el trabajo</title>
-  <link rel="stylesheet" href="base.css?v=20261010-1620">
-  <link rel="stylesheet" href="redesign.css?v=20261010-1620">
-  <link rel="stylesheet" href="logo-smooth.css?v=20261010-2015">
-  <link rel="icon" href="dizle-symbol-2026.svg?v=20261010-2015" type="image/svg+xml">
-  <script defer src="script.js?v=20261010-1620"></script>
+  <meta name="theme-color" content="#070b20">
+  <meta name="description" content="DIZLE reúne Gestor de Tareas, TaskFlow y una serie documental sobre el proceso real de construir productos desde cero.">
+  <meta property="og:title" content="DIZLE — Productos, proceso y aprendizaje">
+  <meta property="og:description" content="Dos productos. Cientos de videos. Una historia que todavía se está construyendo.">
+  <title>DIZLE — Productos, proceso y aprendizaje</title>
+  <link rel="icon" href="dizle-symbol-2026.svg?v=20261028-1835" type="image/svg+xml">
+  <link rel="stylesheet" href="story.css?v=20261028-1835">
+  <script defer src="script.js?v=20261028-1835"></script>
 </head>
 <body>
-<header class="header" id="header">
-  <div class="wrap nav">
+<header class="site-header" id="header">
+  <div class="shell header-inner">
     <a class="brand" href="#inicio" aria-label="DIZLE, inicio">
-      <span class="dizle-logo-switch" aria-hidden="true">
-        <img class="dizle-logo-lockup logo-dark-header" src="dizle-logo-header-2026.svg?v=20261010-2015" alt="">
-        <img class="dizle-logo-lockup logo-light-header" src="dizle-logo-light-2026.svg?v=20261010-2015" alt="">
-      </span>
+      <img src="dizle-logo-header-2026.svg?v=20261028-1835" alt="DIZLE">
     </a>
-    <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav id="nav">
+
+    <button class="menu" id="menu" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="nav" aria-label="Navegación principal">
       <a class="active" href="#inicio">Inicio</a>
-      <a href="#dizle">Qué es DIZLE</a>
-      <a href="#gestor">Gestor de Tareas</a>
-      <a href="#taskflow">TaskFlow</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#dizle">DIZLE</a>
+      <a href="#productos">Productos</a>
+      <a href="#serie">La serie</a>
+      <a href="#proceso">El proceso</a>
     </nav>
-    <div class="nav-side">
-      <a class="instagram-link" href="https://instagram.com/dizlec" target="_blank" rel="noreferrer"><span class="instagram-at" aria-hidden="true">@</span><span>dizlec</span></a>
-      <a class="btn btn-outline small" href="#contacto">Contactar →</a>
-    </div>
+
+    <a class="social-link" href="https://instagram.com/dizlec" target="_blank" rel="noreferrer">
+      <span>@</span>dizlec
+    </a>
   </div>
 </header>
 
 <main>
 <section class="hero" id="inicio">
-  <div class="stars"></div><div class="glow g1"></div><div class="glow g2"></div>
-  <div class="wrap hero-grid">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow hero-glow-a"></div>
+  <div class="hero-glow hero-glow-b"></div>
+
+  <div class="shell hero-layout">
     <div class="hero-copy reveal">
-      <p class="eyebrow">Software de trabajo · DIZLE</p>
-      <h1>Construimos software para <span>ordenar el trabajo.</span></h1>
-      <p class="lead">DIZLE es la empresa matriz detrás de Gestor de Tareas y TaskFlow. Creamos herramientas para centralizar gestión, procesos, administración, comunicación y documentos en un mismo ecosistema.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#gestor">Conocer Gestor de Tareas →</a>
-        <a class="btn btn-outline" href="#dizle">Qué es DIZLE →</a>
+      <p class="eyebrow">DIZLE · PRODUCTOS · PROCESO · HISTORIA</p>
+      <h1>Dos productos.<br><span>Una historia que todavía se está escribiendo.</span></h1>
+      <p class="hero-text">
+        DIZLE reúne <strong>Gestor de Tareas</strong>, <strong>TaskFlow</strong> y el registro completo de lo que significa construirlos desde cero: decisiones, errores, aprendizajes, cambios de rumbo y todo lo que pasa en el medio.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#productos">Conocer los productos →</a>
+        <a class="btn ghost" href="#serie">La serie de DIZLE ↓</a>
       </div>
-      <div class="proof"><span>Gestión</span><i></i><span>Procesos</span><i></i><span>Administración</span><i></i><span>Automatización</span></div>
+      <div class="hero-proof">
+        <span><b>250+</b> videos grabados</span>
+        <i></i>
+        <span><b>2</b> productos</span>
+        <i></i>
+        <span><b>2027</b> comienza la serie</span>
+      </div>
     </div>
+
     <div class="hero-art reveal" aria-hidden="true">
-      <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="dots"></div><div class="halo"></div>
-      <img class="dizle-mark dizle-mark-hero" src="dizle-symbol-2026.svg?v=20261010-2015" alt="">
-      <div class="floor"></div>
+      <div class="orbit orbit-a"></div>
+      <div class="orbit orbit-b"></div>
+      <div class="orbit orbit-c"></div>
+      <div class="dot-field"></div>
+      <div class="logo-halo"></div>
+      <img class="hero-logo" src="dizle-symbol-2026.svg?v=20261028-1835" alt="">
+      <div class="chapter chapter-a">01 · construir</div>
+      <div class="chapter chapter-b">02 · equivocarse</div>
+      <div class="chapter chapter-c">03 · aprender</div>
     </div>
   </div>
 </section>
 
-<section class="manifesto">
-  <div class="section-wrap manifesto-grid">
+<section class="intro-strip">
+  <div class="shell intro-strip-inner">
+    <p><strong>DIZLE no es una agencia.</strong> Es una empresa que construye productos propios y una marca que documenta el proceso real de convertir ideas en algo que funcione.</p>
+    <span class="live-dot">Proyecto en evolución</span>
+  </div>
+</section>
+
+<section class="about section" id="dizle">
+  <div class="shell about-grid">
+    <div class="section-heading reveal">
+      <p class="kicker">QUÉ ES DIZLE</p>
+      <h2>Construir, aprender y después mostrarlo.</h2>
+    </div>
+
+    <div class="about-copy reveal">
+      <p class="lead">
+        DIZLE va tomando forma a medida que avanzan sus propios proyectos. No nació con un plan cerrado: nació haciendo.
+      </p>
+      <p>
+        Hoy la empresa reúne dos productos licenciados bajo la marca: Gestor de Tareas y TaskFlow. Cada uno nació de una necesidad distinta, pero ambos comparten algo: fueron creciendo mientras se usaban, se probaban y se corregían en situaciones reales.
+      </p>
+      <p>
+        Al mismo tiempo, todo ese recorrido se está registrando en video. La intención es transformar ese archivo en una serie que muestre el proceso completo, sin esconder los errores ni presentar el resultado como si hubiera sido obvio desde el principio.
+      </p>
+      <blockquote>
+        “No quiero mostrar solamente lo que salió bien. Quiero mostrar lo que fui aprendiendo mientras intentaba hacerlo.”
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="products section" id="productos">
+  <div class="shell">
+    <div class="section-heading split reveal">
+      <div>
+        <p class="kicker">PRODUCTOS DIZLE</p>
+        <h2>Dos productos nacidos de problemas reales.</h2>
+      </div>
+      <p>Uno busca reunir todo el trabajo en un solo lugar. El otro está convirtiendo una operación real de backoffice en un sistema cada vez más automatizado.</p>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card gestor-card reveal">
+        <div class="product-top">
+          <span class="product-number">01</span>
+          <span class="product-state">Producto público</span>
+        </div>
+        <div class="product-brand gestor-brand">
+          <span class="gestor-icon" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><b></b>
+          </span>
+          <div>
+            <h3>Gestor de Tareas</h3>
+            <p>Tu centro operativo de trabajo.</p>
+          </div>
+        </div>
+        <p class="product-description">
+          Una plataforma para que empresas, freelancers y espacios personales puedan organizar tareas, proyectos, equipos, reportes y automatizaciones sin perder contexto.
+        </p>
+        <ul>
+          <li>Tareas, proyectos y equipos</li>
+          <li>Reportes y seguimiento</li>
+          <li>Automatizaciones y respuestas</li>
+          <li>Una base pensada para sumar nuevos módulos</li>
+        </ul>
+        <div class="mini-ui gestor-ui" aria-hidden="true">
+          <div class="mini-sidebar">
+            <span class="mini-logo">▦</span>
+            <b>Panel</b><span>Tareas</span><span>Proyectos</span><span>Equipos</span><span>Reportes</span>
+          </div>
+          <div class="mini-main">
+            <small>ESPACIO DE TRABAJO</small>
+            <h4>Todo tu trabajo, en un solo lugar.</h4>
+            <div class="mini-stats"><b>24</b><b>8</b><b>11</b><b>5</b></div>
+            <div class="mini-task"><span></span>Preparar propuesta del cliente</div>
+            <div class="mini-task"><span></span>Revisar proyecto de lanzamiento</div>
+            <div class="mini-task"><span></span>Actualizar documentación</div>
+          </div>
+        </div>
+        <a class="product-link" href="https://gestordetareas.com.ar" target="_blank" rel="noreferrer">Visitar gestordetareas.com.ar ↗</a>
+      </article>
+
+      <article class="product-card taskflow-card reveal">
+        <div class="product-top">
+          <span class="product-number">02</span>
+          <span class="product-state internal">Uso interno · en desarrollo</span>
+        </div>
+        <div class="product-brand">
+          <span class="taskflow-icon" aria-hidden="true"><i></i><b></b></span>
+          <div>
+            <h3>TaskFlow</h3>
+            <p>Backoffice operativo.</p>
+          </div>
+        </div>
+        <p class="product-description">
+          Mi sistema de trabajo como backoffice. Está evolucionando hacia un sistema operativo automatizado para tareas y procesos del área de seguros.
+        </p>
+        <ul>
+          <li>Operación diaria y seguimiento</li>
+          <li>Automatizaciones de procesos</li>
+          <li>Herramientas para backoffice</li>
+          <li>Posible versión pública cuando alcance la madurez necesaria</li>
+        </ul>
+        <div class="mini-ui taskflow-ui" aria-hidden="true">
+          <div class="tf-mini-side">
+            <b>TaskFlow</b><span>✓ Tareas</span><span>✦ Proyectos</span><span>↻ Automatizaciones</span><span>✉ Respuestas</span>
+          </div>
+          <div class="tf-mini-main">
+            <div class="tf-search">⌕ Buscar gestión...</div>
+            <h4>Tareas operativas</h4>
+            <div class="tf-counters"><span>128<small>Total</small></span><span>34<small>Pendientes</small></span><span>82<small>Completadas</small></span></div>
+            <div class="tf-task yellow">Revisar solicitud pendiente</div>
+            <div class="tf-task blue">Actualizar seguimiento semanal</div>
+            <div class="tf-task violet">Validar automatización</div>
+          </div>
+        </div>
+        <span class="product-link muted">Versión pública: más adelante</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="series section" id="serie">
+  <div class="series-noise"></div>
+  <div class="shell series-layout">
+    <div class="series-copy reveal">
+      <p class="kicker light">LA SERIE · YOUTUBE</p>
+      <h2>Todo esto empezó antes de que existiera la serie.</h2>
+      <p>
+        Durante el desarrollo fui grabando el proceso. Ya hay más de 250 videos: pruebas, cambios, errores, decisiones, ideas que funcionaron y otras que no.
+      </p>
+      <p>
+        A partir de <strong>agosto de 2027</strong>, la idea es convertir ese archivo en una serie semanal y recorrer desde el comienzo cómo se fueron armando Gestor de Tareas y TaskFlow.
+      </p>
+      <div class="series-quote">
+        No va a ser una serie sobre “cómo hacer todo bien”. Va a ser sobre intentar, equivocarse, aprender y seguir construyendo.
+      </div>
+    </div>
+
+    <div class="series-stats reveal">
+      <article><strong>250+</strong><span>videos registrados hasta hoy</span></article>
+      <article><strong>AGO 2027</strong><span>inicio previsto de la serie</span></article>
+      <article><strong>1 / semana</strong><span>un capítulo cada semana</span></article>
+      <article><strong>2027 → 2029</strong><span>arco previsto de publicación</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="timeline section" id="proceso">
+  <div class="shell">
+    <div class="section-heading split reveal">
+      <div>
+        <p class="kicker">EL PROCESO</p>
+        <h2>No mostrar el resultado. Mostrar el recorrido.</h2>
+      </div>
+      <p>La historia de DIZLE no se va a contar desde el final. La idea es reconstruirla capítulo por capítulo: qué quería hacer, qué salió mal, qué aprendí y por qué cada proyecto terminó convirtiéndose en otra cosa.</p>
+    </div>
+
+    <div class="timeline-track reveal">
+      <article>
+        <span>01</span>
+        <small>El comienzo</small>
+        <h3>Una necesidad concreta.</h3>
+        <p>Problemas reales de organización y trabajo que empiezan a transformarse en herramientas.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <small>Construcción</small>
+        <h3>Probar sin tener todas las respuestas.</h3>
+        <p>Diseño, código, errores, cambios de idea y cientos de decisiones pequeñas.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <small>Evolución</small>
+        <h3>Los productos encuentran su identidad.</h3>
+        <p>Gestor de Tareas toma forma como plataforma pública y TaskFlow como sistema operativo de backoffice.</p>
+      </article>
+      <article>
+        <span>04</span>
+        <small>2027</small>
+        <h3>Contar todo el proceso.</h3>
+        <p>Transformar el archivo de videos en una historia que pueda motivar a alguien más a empezar.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="why section">
+  <div class="shell why-card reveal">
+    <p class="kicker">POR QUÉ DIZLE</p>
+    <h2>Juntar en un mismo proyecto todo lo que me gusta hacer.</h2>
+    <p>
+      Crear productos, resolver problemas, aprender tecnología, grabar, editar, explicar, guiar y contar historias. DIZLE es la forma de poner todas esas partes en el mismo lugar y ver hasta dónde pueden llegar.
+    </p>
+    <div class="why-tags">
+      <span>Construir</span><span>Aprender</span><span>Crear</span><span>Editar</span><span>Explicar</span><span>Compartir</span>
+    </div>
+  </div>
+</section>
+
+<section class="closing section">
+  <div class="shell closing-card reveal">
     <div>
-      <strong>Menos herramientas sueltas. Más trabajo conectado.</strong>
-      <p>La idea central de DIZLE es que la información viaje con el trabajo, en lugar de quedar repartida entre pestañas, archivos y aplicaciones aisladas.</p>
+      <p class="kicker light">DIZLE</p>
+      <h2>Esto todavía está empezando.</h2>
+      <p>Los productos siguen cambiando. La historia sigue grabándose. Y justamente de eso se trata.</p>
     </div>
-    <div class="manifesto-tags"><span>Software propio</span><span>Integraciones</span><span>Módulos conectados</span><span>Automatizaciones</span></div>
-  </div>
-</section>
-
-<section class="company" id="dizle">
-  <div class="section-wrap company-grid reveal">
-    <div class="company-copy">
-      <p class="section-kicker">Qué es DIZLE</p>
-      <h2 class="section-title">Una empresa de software enfocada en cómo se trabaja.</h2>
-      <p class="section-copy">DIZLE nace para desarrollar herramientas que mejoren la gestión, los procesos y la administración de equipos. No buscamos sumar otra aplicación a la lista: buscamos reducir la cantidad de lugares que una persona necesita abrir para hacer su trabajo.</p>
-      <div class="company-note"><strong>La visión:</strong> tareas, clientes, correo, mensajería, proyectos, documentos, datos y automatizaciones compartiendo el mismo contexto de trabajo.</div>
-    </div>
-    <div class="company-pillars">
-      <article><i>◎</i><div><h3>Centralizar</h3><p>Reunir tareas, información, clientes, documentos y comunicación para que el trabajo no quede fragmentado.</p></div></article>
-      <article><i>↔</i><div><h3>Conectar</h3><p>Integrar servicios que ya usa un equipo —como Outlook o, en el futuro, WhatsApp— dentro del flujo de trabajo.</p></div></article>
-      <article><i>⌘</i><div><h3>Construir</h3><p>Desarrollar capacidades propias de DIZLE: edición de documentos, PDF, hojas de cálculo y nuevas herramientas de productividad.</p></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="ecosystem">
-  <div class="section-wrap">
-    <div class="ecosystem-head reveal">
-      <div><p class="section-kicker">El ecosistema</p><h2 class="section-title">Todo el trabajo, con el mismo contexto.</h2></div>
-      <p>La dirección de DIZLE es construir una plataforma donde cada módulo se conecte con el siguiente. Una conversación puede convertirse en tarea; una tarea puede tener documentos, cliente, proyecto, correo, seguimiento y automatizaciones sin salir del entorno.</p>
-    </div>
-    <div class="ecosystem-grid reveal">
-      <article class="eco-card"><span class="eco-icon">✓</span><b>Gestión</b><p>Tareas, proyectos, equipos, clientes, prioridades, calendarios y seguimiento.</p></article>
-      <article class="eco-card"><span class="eco-icon">✉</span><b>Comunicación</b><p>Correo dentro del espacio de trabajo y una visión futura con mensajería integrada.</p></article>
-      <article class="eco-card"><span class="eco-icon">▤</span><b>Documentos</b><p>PDF, documentos de texto y hojas de cálculo creados y editados dentro de la plataforma.</p></article>
-      <article class="eco-card"><span class="eco-icon">ϟ</span><b>Automatización</b><p>Reglas, plantillas y flujos que reduzcan tareas manuales y repeticiones.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="gestor-product" id="gestor">
-  <div class="section-wrap">
-    <div class="product-heading reveal">
-      <div>
-        <span class="product-badge"><i></i> Producto principal</span>
-        <p class="section-kicker">Gestor de Tareas</p>
-        <h2 class="section-title">El lugar donde queremos que suceda toda tu jornada de trabajo.</h2>
-      </div>
-      <p class="section-copy">Gestor de Tareas es el proyecto principal de DIZLE. La meta es que un equipo pueda organizarse, comunicarse, gestionar clientes, trabajar con documentos y automatizar procesos sin saltar constantemente entre aplicaciones.</p>
-    </div>
-
-    <div class="gestor-layout reveal">
-      <article class="gestor-info">
-        <div class="gestor-logo-row">
-          <span class="gestor-product-icon" aria-hidden="true"><span class="grid"><i></i><i></i><i></i><i></i></span><b></b></span>
-          <div><h3>Gestor de Tareas</h3><small>Organizá. Enfocate. Lográ.</small></div>
-        </div>
-        <p>Una plataforma de gestión de trabajo pensada para concentrar el día a día de profesionales y equipos en un único entorno.</p>
-        <div class="now-list">
-          <span><i>✓</i>Tareas, proyectos y seguimiento</span>
-          <span><i>✓</i>Equipos, clientes y contexto compartido</span>
-          <span><i>✓</i>Correo e integración con Outlook</span>
-          <span><i>✓</i>Automatizaciones y herramientas operativas</span>
-        </div>
-        <a class="gestor-cta" href="https://gestordetareas.com.ar" target="_blank" rel="noreferrer">Visitar gestordetareas.com.ar ↗</a>
-        <div class="gestor-vision"><strong>Visión de producto</strong><p>Extender el espacio de trabajo con WhatsApp, reuniones, edición de PDF y documentos, hojas de cálculo y más módulos desarrollados por DIZLE.</p></div>
-      </article>
-
-      <div class="gestor-window" aria-label="Demostración ficticia de Gestor de Tareas">
-        <aside class="gw-sidebar">
-          <div class="gw-brand"><span class="gestor-product-icon"><span class="grid"><i></i><i></i><i></i><i></i></span><b></b></span><span>Gestor de Tareas</span></div>
-          <div class="gw-space"><small>Espacio de trabajo</small><b>Estudio Norte⌄</b></div>
-          <nav class="gw-nav"><span class="active">▦ &nbsp; Panel</span><span>☷ &nbsp; Tareas</span><span>□ &nbsp; Proyectos</span><span>♙ &nbsp; Equipos y clientes</span><span>▣ &nbsp; Calendario</span><span>⌁ &nbsp; Reportes</span><span>ϟ &nbsp; Automatizaciones</span><span>↳ &nbsp; Respuestas</span></nav>
-          <div class="gw-user">VM &nbsp; Valentina<br><small>Administradora</small></div>
-        </aside>
-        <div class="gw-main">
-          <div class="gw-head"><div><small>EMPRESA · ESTUDIO NORTE</small><h4>Buenas tardes, Valentina.</h4></div><button>＋ Crear tarea</button></div>
-          <div class="gw-stats"><article><small>Tareas totales</small><b>18</b></article><article><small>En curso</small><b>7</b></article><article><small>Pendientes</small><b>6</b></article><article><small>Completadas</small><b>5</b></article></div>
-          <div class="gw-table">
-            <div class="gw-tabs"><b>Todas</b><span>En curso</span><span>En equipo</span><span>Pendientes</span><span>Completadas</span></div>
-            <div class="gw-row"><strong>Preparar propuesta mensual</strong><em>Alta</em><span class="gw-status">Vence hoy</span><em>Hoy</em></div>
-            <div class="gw-row"><strong>Revisión de documentación</strong><em>Media</em><span class="gw-status green">En curso</span><em>Mañana</em></div>
-            <div class="gw-row"><strong>Actualizar ficha del cliente</strong><em>Alta</em><span class="gw-status">Pendiente</span><em>13-oct</em></div>
-            <div class="gw-row"><strong>Confirmar reunión de proyecto</strong><em>Media</em><span class="gw-status red">Urgente</span><em>14-oct</em></div>
-          </div>
-          <div class="gw-bottom">
-            <article class="gw-card"><small>Tu semana</small><h5>Completaste 8 de 12 tareas</h5><div class="gw-progress"><i></i></div></article>
-            <article class="gw-card gw-activity"><small>Actividad del equipo</small><p><span class="gw-avatar">LM</span>Lucía actualizó Proyecto Aurora</p><p><span class="gw-avatar">JP</span>Juan completó una tarea</p></article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="roadmap">
-  <div class="section-wrap">
-    <div class="roadmap-head reveal">
-      <p class="section-kicker">Hacia dónde va Gestor de Tareas</p>
-      <h2 class="section-title">Una web que pueda reemplazar muchas pestañas.</h2>
-      <p class="section-copy">Estas capacidades representan la dirección del producto. Algunas ya existen y otras forman parte del desarrollo futuro de DIZLE.</p>
-    </div>
-    <div class="roadmap-grid reveal">
-      <article class="road-card"><span class="status">Disponible / en evolución</span><h3>Tareas, proyectos y clientes</h3><p>Organización operativa con responsables, estados, fechas, archivos, comentarios y contexto.</p></article>
-      <article class="road-card"><span class="status">Integración actual</span><h3>Outlook dentro del trabajo</h3><p>Usar el correo como parte del flujo operativo, sin separar mensajes y tareas.</p></article>
-      <article class="road-card"><span class="status future">Visión</span><h3>WhatsApp integrado</h3><p>Recibir conversaciones y convertirlas en acciones dentro del mismo espacio de trabajo.</p></article>
-      <article class="road-card"><span class="status future">Visión</span><h3>PDF y documentos</h3><p>Crear, editar y organizar documentos sin depender de herramientas externas.</p></article>
-      <article class="road-card"><span class="status future">Visión</span><h3>Editor tipo Word</h3><p>Redacción colaborativa conectada a proyectos, clientes, reuniones y tareas.</p></article>
-      <article class="road-card"><span class="status future">Visión</span><h3>Hojas de cálculo DIZLE</h3><p>Crear y editar información tabular dentro de la plataforma, conectada con los demás módulos.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="taskflow-product" id="taskflow">
-  <div class="section-wrap">
-    <div class="product-heading reveal">
-      <div><p class="section-kicker">TaskFlow</p><h2 class="section-title">El backoffice donde DIZLE prueba trabajo real.</h2></div>
-      <p class="section-copy">TaskFlow es hoy un sistema interno de backoffice. Sirve para probar flujos, automatizaciones y formas de organizar operaciones reales. El objetivo a futuro es convertirlo en una versión pública cuando alcance la madurez necesaria.</p>
-    </div>
-    <div class="tf-product-grid reveal">
-      <article class="tf-info">
-        <div class="tf-logo-row"><span class="tf-product-icon"><i></i><b></b></span><div><h3>TaskFlow</h3><small>Centro operativo</small></div></div>
-        <p>Un entorno más técnico y operativo, pensado para gestionar gran volumen de tareas, prioridades, respuestas, automatizaciones y controles internos.</p>
-        <div class="tf-statuses"><article><small>Hoy</small><b>Uso interno</b></article><article><small>Futuro</small><b>Versión pública</b></article></div>
-      </article>
-
-      <div class="tf-window" aria-label="Demostración ficticia de TaskFlow">
-        <aside class="tfw-sidebar">
-          <div class="tfw-brand"><span class="tf-product-icon"><i></i><b></b></span><span>TaskFlow</span></div>
-          <p class="tfw-nav-title">Espacio de trabajo</p>
-          <nav class="tfw-nav"><span class="active">✓ &nbsp; Tareas</span><span>✦ &nbsp; Proyectos</span><span>↘ &nbsp; Solicitudes</span><span>✎ &nbsp; Respuestas</span><span>↻ &nbsp; Automatizaciones</span><span>✉ &nbsp; Plantillas</span></nav>
-          <p class="tfw-nav-title">Herramientas</p><nav class="tfw-nav"><span>! &nbsp; Alertas</span><span>? &nbsp; Consultas</span></nav>
-          <div class="tfw-filter"><b>Filtros</b><p>Pendientes · Alta prioridad</p></div>
-        </aside>
-        <div class="tfw-main">
-          <div class="tfw-top"><div class="tfw-search">⌕ Buscar por título, detalle, proyecto o equipo...</div><span class="tfw-avatar">AV</span></div>
-          <div class="tfw-head"><div><small>GESTOR OPERATIVO</small><h4>Tareas</h4></div><button>＋ Nueva tarea</button></div>
-          <div class="tfw-stats"><article><small>Total</small><b>128</b></article><article><small>Pendientes</small><b>34</b></article><article><small>Completadas</small><b>82</b></article><article><small>En pantalla</small><b>12</b></article></div>
-          <div class="tfw-grid">
-            <section class="tfw-panel"><div class="tfw-panel-head"><b>Tareas activas</b><span>12 de 128</span></div>
-              <article class="tfw-task"><b>Revisar propuesta de integración</b><small>Proyecto Nébula · Media · Pendiente</small></article>
-              <article class="tfw-task blue"><b>Preparar seguimiento semanal</b><small>Equipo Horizonte · Alta · Pendiente</small></article>
-              <article class="tfw-task violet"><b>Actualizar flujo de respuestas</b><small>Proyecto Lumen · Media · Pendiente</small></article>
-            </section>
-            <section class="tfw-panel tfw-form"><div class="tfw-panel-head"><b>Crear tarea</b><span>Alta rápida</span></div><label>Título<input value="Revisar documentación" readonly></label><label>Proyecto<input value="Proyecto Nébula" readonly></label><label>Notas<textarea readonly>Validar versión antes del envío.</textarea></label><button>Guardar tarea</button></section>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="contact-new" id="contacto">
-  <div class="section-wrap">
-    <div class="contact-card reveal">
-      <div>
-        <p class="section-kicker">Contacto</p>
-        <h2>Seguí el desarrollo de DIZLE o escribinos.</h2>
-        <p>DIZLE está construyendo un ecosistema de software de trabajo. Para consultas sobre Gestor de Tareas, productos o el desarrollo de la plataforma, podés contactarnos directamente.</p>
-        <div class="contact-details">
-          <a href="mailto:dizle-gestordetareas@gestordetareas.com.ar"><i>✉</i>dizle-gestordetareas@gestordetareas.com.ar</a>
-          <a href="https://instagram.com/dizlec" target="_blank" rel="noreferrer"><i>@</i>dizlec</a>
-        </div>
-      </div>
-      <form id="contact-form">
-        <label>Nombre<input name="name" required placeholder="Tu nombre"></label>
-        <label>Email<input type="email" name="email" required placeholder="tu@email.com"></label>
-        <label>Mensaje<textarea name="message" required rows="6" placeholder="Contanos tu consulta"></textarea></label>
-        <button class="btn btn-primary" type="submit">Preparar consulta →</button>
-        <small>Se abrirá tu aplicación de correo con el mensaje listo para enviar.</small>
-      </form>
+    <div class="closing-actions">
+      <a class="btn primary" href="https://instagram.com/dizlec" target="_blank" rel="noreferrer">@dizlec ↗</a>
+      <a class="btn ghost light" href="https://gestordetareas.com.ar" target="_blank" rel="noreferrer">Gestor de Tareas ↗</a>
     </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap footer">
-    <a class="brand" href="#inicio" aria-label="DIZLE, inicio"><img class="dizle-logo-lockup footer-logo" src="dizle-logo-light-2026.svg?v=20261010-2015" alt="" aria-hidden="true"></a>
-    <p>© <span id="year"></span> DIZLE.com.ar — Software para trabajar mejor.</p>
-    <nav><a href="#dizle">DIZLE</a><a href="#gestor">Gestor de Tareas</a><a href="#taskflow">TaskFlow</a><a href="#contacto">Contacto</a></nav>
+  <div class="shell footer-inner">
+    <img src="dizle-logo-light-2026.svg?v=20261028-1835" alt="DIZLE">
+    <p>© <span id="year"></span> DIZLE · Productos, proceso y aprendizaje.</p>
+    <a href="https://instagram.com/dizlec" target="_blank" rel="noreferrer">@dizlec</a>
   </div>
 </footer>
 </body>
