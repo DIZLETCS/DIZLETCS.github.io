@@ -33,3 +33,7 @@ body.page[style*="#10becd"] .panel-wordmark{color:#84b900}
 .brand-card--taskflow .wordmark{color:#1c2a4b}
 .brand-card--taskflow .brand-icon--taskflow{background:transparent;border-radius:0;box-shadow:none}
 @media(max-width:700px){.brand-logo--nutridos{height:43px}.brand-logo--hastka{height:45px}.brand-lockup .dizle-mark{width:31px;height:31px}}
+
+/* Mantener el tamaño natural de los logotipos horizontales */
+.brand-card .card-brand img.brand-logo{width:auto;height:60px;max-width:100%;object-fit:contain}
+@media(max-width:700px){.brand-card .card-brand img.brand-logo--nutridos{height:43px}.brand-card .card-brand img.brand-logo--hastka{height:45px}}
