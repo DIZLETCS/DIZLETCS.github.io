@@ -37,3 +37,27 @@ body.page[style*="#10becd"] .panel-wordmark{color:#84b900}
 /* Mantener el tamaño natural de los logotipos horizontales */
 .brand-card .card-brand img.brand-logo{width:auto;height:60px;max-width:100%;object-fit:contain}
 @media(max-width:700px){.brand-card .card-brand img.brand-logo--nutridos{height:43px}.brand-card .card-brand img.brand-logo--hastka{height:45px}}
+
+/* Páginas institucionales de DIZLE Group */
+.legal-page{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:0 clamp(20px,5vw,80px)}
+.legal-main{width:min(100%,920px);margin:clamp(32px,6vh,70px) auto}
+.legal-shell{padding:clamp(23px,5vw,56px);border:1px solid var(--line);border-radius:26px;background:rgba(250,248,241,.88);box-shadow:0 18px 56px rgba(23,39,81,.055)}
+.legal-main .eyebrow{margin-bottom:18px}
+.legal-main h1{margin:0 0 14px;font:800 clamp(38px,6vw,66px)/1.02 var(--display);letter-spacing:-.07em}
+.legal-lead{max-width:720px;margin:0 0 22px;color:#4f5d79;font-size:clamp(16px,1.8vw,19px);line-height:1.65}
+.legal-updated{margin:0 0 32px;color:var(--muted);font-size:11px;font-weight:700}
+.legal-main h2{margin:30px 0 10px;font:800 19px/1.25 var(--display);letter-spacing:-.035em}
+.legal-main h3{margin:23px 0 8px;font-size:14px}
+.legal-main p,.legal-main li{color:#4f5d79;font-size:14px;line-height:1.75}
+.legal-main p{margin:0 0 13px}
+.legal-main ul{padding-left:20px;margin:0 0 17px}
+.legal-main a.inline-link{color:#2454e8;text-decoration:underline;text-underline-offset:3px}
+.legal-projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0}
+.legal-project{padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.42)}
+.legal-project strong{display:block;margin-bottom:6px;color:var(--ink);font:800 16px var(--display)}
+.legal-project span{display:block;color:var(--muted);font-size:12px;line-height:1.55}
+.legal-main .contact-panel{padding:18px;border-radius:16px;background:rgba(169,232,76,.13);margin-top:24px}
+.legal-main .contact-panel a{font-weight:800}
+.footer-legal{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.footer-legal a{white-space:nowrap}
+@media(max-width:700px){.legal-page{padding:0 19px}.legal-main{margin:26px auto}.legal-shell{padding:22px;border-radius:19px}.legal-main h1{font-size:clamp(38px,10vw,55px)}.legal-main p,.legal-main li{font-size:13px}.legal-projects{grid-template-columns:1fr;gap:8px}.footer-legal{gap:8px}.footer-legal a{font-size:8px}}
