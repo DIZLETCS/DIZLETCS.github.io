@@ -14,3 +14,22 @@
 /* Identidad de Gestor de Tareas: verde lima */
 .brand-card--gestor .wordmark{color:#84b900}
 body.page[style*="#10becd"] .panel-wordmark{color:#84b900}
+
+/* Colores y logos oficiales en la portada */
+.brand-lockup .dizle-mark{width:38px;height:38px;object-fit:contain;display:block}
+.brand-card{border-color:color-mix(in srgb,var(--accent) 20%,var(--line))}
+.brand-card:after{background:linear-gradient(135deg,var(--accent),var(--accent-2,var(--accent)))}
+.brand-card:hover{border-color:color-mix(in srgb,var(--accent) 48%,var(--line))}
+.card-arrow{border-color:color-mix(in srgb,var(--accent) 44%,var(--line))}
+.brand-card--nutridos{--accent:#92d41c;--accent-2:#12becd}
+.brand-card--hastka{--accent:#f2198b;--accent-2:#2454e8}
+.brand-card--gestor{--accent:#baf26a;--accent-2:#78c944}
+.brand-card--taskflow{--accent:#6552ef;--accent-2:#17c6ee}
+.card-brand--image{gap:0}
+.brand-logo{width:auto;max-width:100%;height:60px;object-fit:contain;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.brand-logo--nutridos{height:55px}
+.brand-logo--hastka{height:60px}
+.brand-card--gestor .wordmark{color:#83b717}
+.brand-card--taskflow .wordmark{color:#1c2a4b}
+.brand-card--taskflow .brand-icon--taskflow{background:transparent;border-radius:0;box-shadow:none}
+@media(max-width:700px){.brand-logo--nutridos{height:43px}.brand-logo--hastka{height:45px}.brand-lockup .dizle-mark{width:31px;height:31px}}
