@@ -61,3 +61,6 @@ body.page[style*="#10becd"] .panel-wordmark{color:#84b900}
 .footer-legal{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .footer-legal a{white-space:nowrap}
 @media(max-width:700px){.legal-page{padding:0 19px}.legal-main{margin:26px auto}.legal-shell{padding:22px;border-radius:19px}.legal-main h1{font-size:clamp(38px,10vw,55px)}.legal-main p,.legal-main li{font-size:13px}.legal-projects{grid-template-columns:1fr;gap:8px}.footer-legal{gap:8px}.footer-legal a{font-size:8px}}
+
+/* Hover de marca para el canal de YouTube de Gestor de Tareas */
+.social-stack a.gestor-youtube:hover,.social-stack a.gestor-youtube:focus-visible,.footer-social a.gestor-youtube:hover,.footer-social a.gestor-youtube:focus-visible{color:#83b717}
