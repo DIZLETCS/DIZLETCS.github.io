@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dizle.com.ar/sitemap.xml
