@@ -67,3 +67,6 @@ body.page[style*="#10becd"] .panel-wordmark{color:#84b900}
 
 /* NODOSEG */
 .brand-card--taskflow{--accent:#00bfae;--accent-2:#0078c8}.brand-card--taskflow .wordmark{color:#08213f}.brand-card--taskflow .brand-icon--taskflow{background:transparent;box-shadow:none}
+
+/* Three active projects: fill the final grid row. */
+.brand-grid > .brand-card:last-child:nth-child(odd){grid-column:1/-1}
